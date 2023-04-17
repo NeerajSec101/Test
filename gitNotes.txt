@@ -1,0 +1,104 @@
+What is git and github?
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+Git is a version control system and Github is a remote tool or open source platform that others developer can contribute to source code.
+
+Version control system are tools that help a software team manage changes to source code over time.
+
+For almost all software projects, the source code is like the crown jewels- a precious asses whose value must be protected.
+
+VSC are sometime kown as SCM (source code Management) tool.
+
+Most widely used modern version control system in the world today is Git. Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvals, the famous creator of the 
+Linux Operating system kernel.
+
+Two type Version controlling
+1) Centrailized Version controlling
+2) Distributed Version controlling
+
+Git is Distributed Version controlling.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+What is gitbash?
+
+17/04/2023
+==========================
+what is .gitignore file? What type of data it contain? Can we make some logic in this file?
+
+===========================================================================
+>>.gitignore only contain ignorable data that can not be in Local repository(LR). LR is contain only source code. We can only give some intructions inside to ignore the files like:
+(*.class,*.txt,*.png etc). We can not make some logic in this. gitignore only understand * and file names with extention.
+
+What is Git Stash?
+============================
+Git stash is basically hidding the unfinshed source code.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+git init
+touch  f1   f2
+git add .
+git commit -m "a"
+
+touch  f3  f4
+git add .
+touch f5 f6
+ 
+git status (2 staged file, 2 untraked files)
+
+git stash	(by default staged fill move into stashed area after run this command)
+git status(2 untracked files)
+git add .
+git commit -m "b"
+
+git status (Working tree is clean)
+
+git stash pop
+git status (2 staged files)
+
+git commit -m "c"
+
+touch f7 f8
+git add .
+touch f9 f10
+git status(2 staged, 2 untracked)
+
+git stash -u(add all staged and untracked file into stashed area)
+git status (Working tree is clean)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Notes:
+This feature is used for leaving unfinished work, in such a way that git cann't access it and continue work on some other files.
+
+Further commands of git should be able to process only the new file.
+This can be done using git stash.
+
+Commands
+=========================
+1)To stash the stagged files
+$ git stash
+
+2)To stash stagged and untracked files
+$git stash -u
+
+3)To see the lisi of stashes
+$git stash list
+
+4)To get back the stashed files
+$git stash pop
+
+5)To bring the older stash out
+$git stash pop stash@{stash_number}
+
++++++++++++++++++++++++++++++++++++++++++++  
+
+1) What is Git Ammed?
+2) How to go back to previous version of code?
+3) Remote Repository(Github)
+
+===============================================================
+
+
+
+
+
+
+
