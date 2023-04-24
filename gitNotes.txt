@@ -18,7 +18,7 @@ Two type Version controlling
 Git is Distributed Version controlling.
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-What is gitbash?
+What is gitbash? 
 
 17/04/2023
 ==========================
@@ -95,7 +95,13 @@ $git stash pop stash@{stash_number}
 3) Remote Repository(Github)
 
 ===============================================================
+Git Amend 
+===================
+$git commit --amend -m "first"
 
+How to go back to previous version of code?
+------------------------------------------------------------------------
+$git reset --hard commit_id (that you want retvert)
 
 
 
